@@ -1,0 +1,8 @@
+# Autostart tmux on Alacritty launch
+# https://pawelgrzybek.com/autostart-tmux-on-alacritty-launch/
+shell:
+  program: /usr/bin/fish
+  args:
+    - -l
+    - -c
+    - "tmux attach || tmux && cd ~"
