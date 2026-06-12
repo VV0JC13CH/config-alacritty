@@ -1,11 +1,10 @@
-# Autostart tmux on Alacritty launch
-# https://pawelgrzybek.com/autostart-tmux-on-alacritty-launch/
+# Autostart zellij on Alacritty launch
 shell:
   program: /usr/bin/fish
   args:
     - -l
     - -c
-    - "tmux attach || tmux && cd ~"
+    - "zellij attach --create"
 # scrolling key combination https://dev.to/terkwood/fast-scrolling-with-tmux-and-alacritty-3dmn
 key_bindings:
 - { key: PageUp,   mods: Shift, action: ScrollPageUp,   mode: ~Alt       }
